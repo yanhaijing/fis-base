@@ -1,0 +1,35 @@
+/** 
+ * transition
+ */
+.transition(@prop: all; @dur: 1s; @timefun: linear; @delay: 0s) {
+    -webkit-transition: @prop @dur @timefun @delay;
+    transition: @prop @dur @timefun @delay;
+}  
+
+/** 
+ * transform
+ */ 
+.transform(@prop) {
+    -webkit-transform: @prop;
+    transform: @prop;
+}
+.transform-origin(@x; @y) {
+    -webkit-transform-origin: @x @y;
+    transform-origin: @x @y;
+}
+
+/** 
+ * animation
+ */
+.animation(@name; @dur: 1s; @timefun: linear; @delay: 0s; @count: 1; @dir: normal) {
+    -webkit-animation: @name @dur @timefun @delay @count @dir;
+    animation: @name @dur @timefun @delay @count @dir;
+}
+
+/** 
+ * 尺寸
+ */
+.size(@width; @height) {
+    width: @width;
+    height: @height;
+}
